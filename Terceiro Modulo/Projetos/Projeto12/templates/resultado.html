@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do IMC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .card {
+            background: #fff;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #5752ec;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background-color: #4c93af;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Seu Resultado</h1>
+        <p><strong>IMC:</strong> {{ imc }}</p>
+        <p><strong>Classificação:</strong> {{ classificacao }}</p>
+        <a href="/">Calcular novamente</a>
+    </div>
+</body>
+</html>
